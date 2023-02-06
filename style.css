@@ -161,15 +161,17 @@ header.active {
   height: 100vh;
   width: 100vw;
   background: var(--main);
-  position: absolute;
+ position: absolute;
   left: 0;
   top: 0;
-  transform: translateX(100%);
+  transform: translateY(-100%);
   transition: all 0.3s ease-in-out;
 }
 
 .menu.active {
-  transform: translateX(0);
+  transform: translateY(0);
+ 
+  
 }
 
 .burger {
@@ -438,7 +440,7 @@ header.active {
 }
 .project-content-card-img {
   height: 400px;
-  position: relative;
+  
 }
 
 .project-content-card img {
@@ -447,7 +449,9 @@ header.active {
   display: block;
   margin: 0 auto;
   padding-bottom: 30px;
+  
 }
+
 
 
 .project-info {
@@ -685,9 +689,19 @@ header.active {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .technologies-item img {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+
+
+
 /* CONTACT */
 
-.contact img {
+/*.contact img {
   display: none;
 }
 
@@ -766,7 +780,7 @@ header.active {
     margin: 0 auto;
   }
 }
-
+*/
 
 .contact-me {
   display: flex;
@@ -774,6 +788,7 @@ header.active {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  
 }
 .email-me-div {
   display: flex;
@@ -793,6 +808,17 @@ header.active {
   height: 32px;
   filter: invert(99%) sepia(96%) saturate(0%) hue-rotate(246deg) brightness(106%) contrast(101%);
 }
+a img {
+  height: 32px;
+  margin-left: -10px;
+  margin-top: 10px;
+}
+.download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .cv {
   background: none;
@@ -840,6 +866,8 @@ header.active {
     display: flex;
   }
 }
+
+
 
 /*  FOOTER  */
 
